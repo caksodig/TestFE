@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-safe {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .hover-scale {
+    @apply transform transition-transform duration-200 hover:scale-105;
+  }
+
+  .card-hover {
+    @apply transition-safe hover:shadow-lg hover:-translate-y-1;
+  }
+}
+/* 
+* {
+  outline: 1px solid red;
+}  */
